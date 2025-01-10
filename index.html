@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title><Form></Form></title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
+    <meta name="viewport" content="width=device-width, inital-scale = 1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
     <main>
-      <h1>Home page</h1>
+      <form>
+        <label for="fname"><b>First name:</b></label><br>
+        <input type="text" id="fname" name="fname" placeholder="John"><br>
+        <label for="lname"><b>Last name:</b></label><br>
+        <input type="text" id="lname" name="lname" placeholder="Doe"><br>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+      <form>
+        <p><b>Please select your favorite holiday:</b></p>
+        <input type="radio" id="easter" name="fav_holiday" value="easter">
+        <label for="easter">Easter</label><br>
+        <input type="radio" id="summer" name="fav_holiday" value="summer">
+        <label for="summer">Summer</label><br>
+        <input type="radio" id="christmas" name="fav_holiday" value="christmas">
+        <label for="christmas">Christmas</label><br>
+      </form>
+      <p><b>Check of your wishlist:</b></p>
+      <form>
+        <input type="checkbox" id="wish1" name="wish1" value="Money">
+        <label for="wish1">Money</label><br>
+        <input type="checkbox" id="wish2" name="wish2" value="EndlessHoliday">
+        <label for="wish2">Endless holiday</label><br>
+        <input type="checkbox" id="wish3" name="wish3" value="Voice">
+        <label for="wish3">A mesmerizing singing voice</label><br>
+        <input type="checkbox" id="wish4" name="wish4" value="Peace">
+        <label for="wish4">Peace on earth</label><br>
+      </form>
     </main>
   </body>
 </html>
